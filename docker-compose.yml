@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  frontend:
+    volumes :
+      - '.:/home/node'  
+    build: .
+    command: sh entrypoint.sh
+    working_dir: /home/node
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
