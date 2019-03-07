@@ -1,0 +1,151 @@
+/*
+cat-theme.css is used for overrides of existing Aurora CSS class names, or tags.
+All component specific CSS lives in the React file with the component. 
+*/
+
+.app {
+  text-align: center;
+}
+
+/* Headers */
+
+/* h1: add green line underneath */
+h1.green-divider:after {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid #c7e68c;
+  padding-bottom: 12px;
+}
+
+h1 {
+  padding-bottom: 12px;
+}
+
+h2 {
+  color: #00565e;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+h4 {
+  color: #00565e;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #00565e;
+  border-color: #00565e;
+}
+
+.btn-primary:hover {
+  background-color: #327d78;
+  border-color: #327d78;
+}
+
+.btn-primary:active {
+  background-color: #00565e !important;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #009fae;
+}
+
+.btn-secondary {
+  color: #00565e;
+  border-color: #00565e;
+}
+
+.btn-secondary:hover {
+  background-color: #00565e;
+}
+
+.btn-secondary:active {
+  background-color: #00565e !important;
+}
+
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem #00565e;
+}
+
+.btn-wide {
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.centered-buttons {
+  text-align: center;
+}
+
+.btn-backtotop {
+  background-color: white;
+}
+
+.btn-backtotop:hover {
+  background-color: #00565e;
+}
+
+/*
+Progess Steps
+*/
+
+.step-indicator .steps li {
+  text-transform: none;
+}
+
+/* override color of text in active li*/
+.step-indicator .steps li.active {
+  color: #00565e;
+}
+
+/* override inner and outer cicle colors of active li */
+.step-indicator .steps li.active:before {
+  border-color: #009fae;
+  box-shadow: 0 0 0 0.2rem #c7e68c;
+}
+
+/* override checkmark and text color of completed li */
+.step-indicator .steps li.complete {
+  color: #00565e;
+}
+
+/* override circle color of completed li */
+.step-indicator .steps li.complete:before {
+  border-color: #009fae;
+}
+
+/* override line color of completed li to active li */
+.step-indicator .steps li.complete + li:after {
+  background-color: #009fae;
+}
+
+/* Nav */
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  border-color: transparent transparent #00565e;
+}
+.nav-tabs .nav-link.disabled {
+  color: #00565e;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #00565e;
+  border-color: transparent transparent #00565e;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #00565e;
+}
