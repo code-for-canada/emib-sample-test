@@ -45,5 +45,8 @@
     "not dead",
     "not ie <= 8",
     "not op_mini all"
-  ]
+  ],
+  "engines": {
+    "node": "10.15.0"
+  }
 }
