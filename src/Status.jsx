@@ -55,6 +55,7 @@ class Status extends Component {
 
   checkBackend = async () => {
     return;
+    // eslint-disable-next-line
     const test = await fetch("/api/", {
       method: "GET",
       headers,
@@ -68,6 +69,7 @@ class Status extends Component {
 
   checkDatabase = async () => {
     return;
+    // eslint-disable-next-line
     const test = await fetch("/database_check/", {
       method: "GET",
       headers,
