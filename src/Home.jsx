@@ -7,6 +7,7 @@ const Home = () => {
     <div className="app">
       <ContentContainer>
         <h1>{LOCALIZE.homePage.title}</h1>
+        <h2>This is a heroku review app</h2>
         <p>{LOCALIZE.homePage.description}</p>
       </ContentContainer>
     </div>
